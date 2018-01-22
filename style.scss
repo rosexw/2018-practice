@@ -1,0 +1,61 @@
+/*For everything:*/
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/*top green navigation bar*/
+/* Style the items inside the navigation bar */
+.navbar {
+  background-color: #5b82cb;
+  overflow: hidden;
+  text-decoration: none;
+  position: fixed; /* Make it stick, even on scroll */
+  width: 17%;
+  height: 100vh;
+  top: 0;
+
+  &__logo {
+    width: 180px;
+  }
+}
+
+  ul {
+    display: inline-block;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  li {
+    padding: 12px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  li a {
+    color: white;
+  }
+
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+  }
+
+  /* Change the color to yellow of links on hover */
+  a:hover {
+    color: yellow;
+  }
+  /* Add a color to the active/current link */
+  a.active {
+    color: white;
+  }
+
+body {
+  margin: 0;
+}
+.results {
+  top: 50px;
+  left: 250px;
+  position: absolute;
+}
