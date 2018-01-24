@@ -2,16 +2,6 @@
 * {
   font-family: Helvetica, Arial, sans-serif; }
 
-.just-some-text {
-  left: 250px;
-  position: fixed; }
-  .just-some-text .exciting-text::after {
-    content: "<- now this *is* exciting!";
-    color: green; }
-  .just-some-text .boring-text::after {
-    content: "<- BORING!";
-    color: red; }
-
 /* Style the items inside the navigation bar */
 #navbar {
   background-color: #5b82cb;

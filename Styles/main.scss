@@ -3,19 +3,6 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.just-some-text {
-  left: 250px;
-  position: fixed;
-  .exciting-text::after {
-    content: "<- now this *is* exciting!";
-    color: green;
-  }
-
-  .boring-text::after {
-    content: "<- BORING!";
-    color: red;
-  }
-}
 
 
 @import 'Nav';
