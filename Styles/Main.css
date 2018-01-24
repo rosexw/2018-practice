@@ -2,12 +2,15 @@
 * {
   font-family: Helvetica, Arial, sans-serif; }
 
-body {
-  margin: 0; }
-
-/* Change the color to yellow of links on hover */
-a:hover, a.active, a:visited {
-  color: yellow; }
+.just-some-text {
+  left: 250px;
+  position: fixed; }
+  .just-some-text .exciting-text::after {
+    content: "<- now this *is* exciting!";
+    color: green; }
+  .just-some-text .boring-text::after {
+    content: "<- BORING!";
+    color: red; }
 
 /* Style the items inside the navigation bar */
 #navbar {
@@ -18,9 +21,28 @@ a:hover, a.active, a:visited {
   /* Make it stick, even on scroll */
   width: 220px;
   height: 100vh;
-  top: 0; }
+  top: 0;
+  left: -220px;
+  z-index: 2;
+  transition: top 0.2s ease-in-out; }
+  #navbar .toggle {
+    text-decoration: none;
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.61);
+    -webkit-transition: all 0.15s ease-out 0;
+    -moz-transition: all 0.15s ease-out 0;
+    transition: all 0.45s ease-out 0;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    cursor: pointer; }
   #navbar .logo {
     width: 80%; }
+  #navbar:active, #navbar:hover {
+    left: 0px; }
+    #navbar:active .toggle, #navbar:hover .toggle {
+      visibility: hidden; }
   #navbar ul {
     display: inline-block;
     list-style-type: none;
@@ -28,10 +50,13 @@ a:hover, a.active, a:visited {
   #navbar li {
     padding: 20px;
     font-weight: 500;
-    font-size: 20px; }
+    font-size: 20px;
+    /* Change the color to yellow of links on hover */ }
     #navbar li a {
       color: white;
       text-decoration: none; }
+    #navbar li a:hover, #navbar li a:active, #navbar li a:focus {
+      color: yellow; }
   #navbar .nav-wrapper {
     display: flex;
     align-items: center;
@@ -39,21 +64,20 @@ a:hover, a.active, a:visited {
     height: 50px; }
 
 #results {
-  top: 200px;
   left: 250px;
+  width: 90%;
+  top: 200px;
   position: absolute;
   white-space: nowrap; }
   #results .img {
-    display: inline-block;
     position: relative;
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     width: 200px;
-    height: 100px;
-    /*Reflection*/ }
-  #results .img:hover {
+    height: 100px; }
+  #results .img:hover, #results .img:active, #results .img:focus {
     width: 400px;
     height: 200px;
     /*Reflection*/
