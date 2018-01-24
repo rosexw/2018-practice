@@ -7,8 +7,9 @@
   background-color: #5b82cb;
   overflow: hidden;
   text-decoration: none;
-  position: fixed;
+  position: absolute;
   /* Make it stick, even on scroll */
+  margin-right: 50px;
   width: 220px;
   height: 100vh;
   top: 0;
@@ -25,7 +26,7 @@
     -moz-transition: all 0.15s ease-out 0;
     transition: all 0.45s ease-out 0;
     position: fixed;
-    top: 60vh;
+    top: 40vh;
     left: 20px;
     z-index: 1;
     cursor: pointer; }
@@ -56,10 +57,11 @@
     height: 50px; }
 
 #results {
-  top: 40vh;
-  position: absolute;
+  top: 30vh;
+  position: relative;
   left: 70px;
-  white-space: nowrap; }
+  white-space: nowrap;
+  width: 500px; }
   #results .img {
     display: inline-block;
     position: relative;

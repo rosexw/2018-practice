@@ -4,7 +4,8 @@
   background-color: #5b82cb;
   overflow: hidden;
   text-decoration: none;
-  position: fixed; /* Make it stick, even on scroll */
+  position: absolute; /* Make it stick, even on scroll */
+  margin-right: 50px;
   width: 220px;
   height: 100vh;
   top: 0;
@@ -26,7 +27,7 @@
     -moz-transition: all 0.15s ease-out 0;
     transition: all 0.45s ease-out 0;
     position: fixed;
-    top: 60vh;
+    top: 40vh;
     left: 20px;
     z-index: 1;
     cursor: pointer;

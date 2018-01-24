@@ -1,12 +1,17 @@
 
 //RESULTS on right side, images scroll
 
+
+
 #results {
-  top: 40vh;
-  position: absolute;
+  top: 30vh;
+  position: relative;
   left: 70px;
 
   white-space: nowrap;
+
+  width: 500px;
+
 
   .img {
     display: inline-block;
