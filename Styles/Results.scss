@@ -1,0 +1,42 @@
+
+//RESULTS on right side, images scroll
+#results {
+
+  top: 200px;
+  left: 250px;
+  position: absolute;
+  // height: 400px;
+
+  white-space: nowrap;
+
+  .img {
+    display: inline-block;
+    position: relative;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+
+    width: 200px;
+    height: 100px;
+
+    /*Reflection*/
+  	// -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.1)));
+  }
+
+  .img:hover {
+    // transform: scale(1.5);
+
+    width: 400px;
+    height: 200px;
+
+    /*Reflection*/
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0,0,0,0.4)));
+
+    /*Glow*/
+    -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    -moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+
+  }
+}
