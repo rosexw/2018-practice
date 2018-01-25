@@ -1,16 +1,13 @@
 
 //RESULTS on right side, images scroll
 
-
-
 #results {
   top: 30vh;
   position: relative;
-  left: 70px;
+  display: block;
+  left: 250px;
 
   white-space: nowrap;
-
-  width: 500px;
 
 
   .img {

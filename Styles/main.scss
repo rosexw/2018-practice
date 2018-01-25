@@ -3,5 +3,20 @@
   font-family: Helvetica, Arial, sans-serif;
 }
 
+body {
+  position: relative;
+}
+
+
 @import 'Nav';
 @import 'Results';
+
+
+#navbar {
+  &:active, &:hover, &:focus {
+    left: 0px;
+    #results {
+      left: 220px;
+    }
+  }
+}
