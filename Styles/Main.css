@@ -15,6 +15,7 @@ body {
   margin-right: 50px;
   width: 220px;
   height: 100vh;
+  margin-top: 0;
   top: 0;
   left: -220px;
   z-index: 2;
@@ -29,10 +30,14 @@ body {
     -moz-transition: all 0.15s ease-out 0;
     transition: all 0.45s ease-out 0;
     position: fixed;
-    top: 40vh;
-    left: 100px;
+    margin: 0;
+    padding-top: 40vh;
+    padding-left: 50px;
     z-index: 1;
-    cursor: pointer; }
+    cursor: pointer;
+    height: 100vh;
+    width: 50px;
+    background-color: #5b82cb; }
   #navbar:active, #navbar:hover, #navbar:focus {
     left: 0px; }
     #navbar:active .toggle, #navbar:hover .toggle, #navbar:focus .toggle {
@@ -51,17 +56,14 @@ body {
       text-decoration: none; }
     #navbar li a:hover, #navbar li a:active, #navbar li a:focus {
       color: yellow; }
-  #navbar .nav-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px; }
+
+.container {
+  box-sizing: border-box; }
 
 #results {
   top: 30vh;
   position: relative;
-  display: block;
-  left: 250px;
+  left: 100px;
   white-space: nowrap; }
   #results .img {
     display: inline-block;
@@ -84,7 +86,8 @@ body {
 
 #navbar:active, #navbar:hover, #navbar:focus {
   left: 0px; }
-  #navbar:active #results, #navbar:hover #results, #navbar:focus #results {
-    left: 220px; }
+  #navbar:active .container, #navbar:hover .container, #navbar:focus .container {
+    transform: translateX(220px);
+    transition: all 0.2s; }
 
 /*# sourceMappingURL=Main.css.map */

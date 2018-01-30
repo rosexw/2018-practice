@@ -1,11 +1,14 @@
 
 //RESULTS on right side, images scroll
 
+.container {
+  box-sizing: border-box;
+}
+
 #results {
   top: 30vh;
   position: relative;
-  display: block;
-  left: 250px;
+  left: 100px;
 
   white-space: nowrap;
 
@@ -17,6 +20,7 @@
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
+
 
     width: 300px;
     height: 150px;

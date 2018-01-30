@@ -7,16 +7,15 @@ body {
   position: relative;
 }
 
-
 @import 'Nav';
 @import 'Results';
+@import 'Partials/Variables';
 
 
-#navbar {
-  &:active, &:hover, &:focus {
+#navbar:active, #navbar:hover, #navbar:focus {
     left: 0px;
-    #results {
-      left: 220px;
+    .container {
+      transform: translateX($sidebarWidth);
+      transition: all 0.2s;
     }
   }
-}
