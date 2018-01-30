@@ -5,6 +5,8 @@
 
 body {
   position: relative;
+  margin: 0;
+  display: flex;
 }
 
 @import 'Nav';
@@ -13,9 +15,5 @@ body {
 
 
 #navbar:active, #navbar:hover, #navbar:focus {
-    left: 0px;
-    .container {
-      transform: translateX($sidebarWidth);
-      transition: all 0.2s;
-    }
-  }
+  transform: translateX(0);
+}

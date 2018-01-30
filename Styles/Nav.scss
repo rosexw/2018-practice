@@ -5,22 +5,18 @@
 
 #navbar {
   background-color: $colorLightBlue;
-  overflow: hidden;
   text-decoration: none;
-  position: absolute; /* Make it stick, even on scroll */
   margin-right: 50px;
-  width: $sidebarWidth;
+  min-width: $sidebarButtonWidth + $sidebarWidth;
+  position: relative;
   height: 100vh;
   margin-top: 0;
-  top: 0;
-  left: -220px;
 
-  z-index: 2;
-
-  transition: top 0.2s ease-in-out;
+  transition: all 0.2s;
+  transform: translateX(-$sidebarWidth);
 
   .logo {
-    width: 80%;
+    width: 68%;
   }
 
   .toggle {
@@ -31,22 +27,14 @@
     -webkit-transition: all 0.15s ease-out 0;
     -moz-transition: all 0.15s ease-out 0;
     transition: all 0.45s ease-out 0;
-    position: fixed;
-    // top: 40vh;
-    // left: 20px;
     margin: 0;
     padding-top: 40vh;
-    padding-left: 50px;
-    z-index: 1;
     cursor: pointer;
-    height: 100vh;
-    width: 50px;
-
-    background-color: $colorLightBlue;
+    position: absolute;
+    right: 50px;
   }
 
-  &:active, &:hover, &:focus {
-    left: 0px;
+  &:active .toggle, &:hover .toggle, &:focus .toggle {
     .toggle {
       visibility: hidden;
     }
@@ -73,7 +61,11 @@
     a:hover, a:active, a:focus {
       color: yellow;
     }
-
   }
+}
 
+
+.container {
+  transition: all 0.2s;
+  transform: translateX(-$sidebarWidth);
 }
