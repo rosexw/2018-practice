@@ -15,9 +15,7 @@ body {
   min-width: 320px;
   position: relative;
   height: 100vh;
-  margin-top: 0;
-  transition: all 0.2s;
-  transform: translateX(-220px); }
+  margin-top: 0; }
   #navbar .logo {
     width: 68%; }
   #navbar .toggle {
@@ -50,16 +48,12 @@ body {
       color: yellow; }
 
 .container {
-  transition: all 0.2s;
-  transform: translateX(-220px); }
-
-.container {
   box-sizing: border-box; }
 
 #results {
   top: 30vh;
   position: relative;
-  left: 220px;
+  left: 50px;
   white-space: nowrap; }
   #results .img {
     display: inline-block;
@@ -82,5 +76,15 @@ body {
 
 #navbar:active, #navbar:hover, #navbar:focus {
   transform: translateX(0); }
+  #navbar:active ~ .container, #navbar:hover ~ .container, #navbar:focus ~ .container {
+    transform: translateX(0); }
+
+#navbar {
+  transition: all 0.2s;
+  transform: translateX(-220px); }
+
+.container {
+  transition: all 0.2s;
+  transform: translateX(-220px); }
 
 /*# sourceMappingURL=Main.css.map */

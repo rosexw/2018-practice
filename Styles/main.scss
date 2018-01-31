@@ -15,5 +15,18 @@ body {
 
 
 #navbar:active, #navbar:hover, #navbar:focus {
-  transform: translateX(0);
+    transform: translateX(0);
+    &~ .container {
+      transform: translateX(0);
+    }
+}
+
+#navbar {
+  transition: all 0.2s;
+  transform: translateX(-$sidebarWidth);
+}
+
+.container {
+  transition: all 0.2s;
+  transform: translateX(-$sidebarWidth);
 }
