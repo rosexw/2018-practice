@@ -1,0 +1,25 @@
+{
+  "name": "2018-practice",
+  "version": "1.0.0",
+  "description": "practice CSS stylings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rosexw/2018-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rosexw/2018-practice/issues"
+  },
+  "homepage": "https://github.com/rosexw/2018-practice",
+  "dependencies": {
+    "gh-pages": "^1.1.0",
+    "package": "^1.0.1"
+  }
+}
