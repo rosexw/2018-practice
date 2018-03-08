@@ -7,6 +7,7 @@ body {
   margin: 0;
   display: flex; }
 
+/*sass --watch Styles/main.scss:Styles/main.css*/
 /* Style the items inside the navigation bar */
 #navbar {
   background-color: #5b82cb;
@@ -20,7 +21,7 @@ body {
   display: flex;
   flex-direction: column; }
   #navbar .logo {
-    width: 68%; }
+    width: 180px; }
   #navbar .toggle {
     text-decoration: none;
     font-size: 2em;
@@ -46,7 +47,10 @@ body {
     /* Change the color to yellow of links on hover */ }
     #navbar li a {
       color: white;
-      text-decoration: none; }
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
     #navbar li a:hover, #navbar li a:active, #navbar li a:focus {
       color: yellow; }
 
@@ -90,4 +94,4 @@ body {
   transition: all 0.2s;
   transform: translateX(-220px); }
 
-/*# sourceMappingURL=Main.css.map */
+/*# sourceMappingURL=main.css.map */

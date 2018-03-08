@@ -9,6 +9,7 @@ body {
   display: flex;
 }
 
+/*sass --watch Styles/main.scss:Styles/main.css*/
 @import 'Nav';
 @import 'Results';
 @import 'Partials/Variables';
