@@ -20,5 +20,7 @@
   "homepage": "https://github.com/rosexw/2018-practice/build",
   "devDependencies": {
     "@linclark/github-pages-deploy": "^2.0.0"
-  }
+  },
+  "build": "...",
+  "deploy": "github-pages-deploy"
 }
